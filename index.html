@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <div class="volume-container">
+        <div class="volume-button">
+          <div class="volume volumeMedium volumeMedium--active">
+            <?xml version="1.0" ?><svg fill="none" height="30" stroke-width="1.5" viewBox="0 0 24 24" width="30"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2 14V10C2 9.44772 2.44772 9 3 9H5.69722C5.89465 9 6.08766 8.94156 6.25192 8.83205L10.4453 6.03647C11.1099 5.59343 12 6.06982 12 6.86852V17.1315C12 17.9302 11.1099 18.4066 10.4453 17.9635L6.25192 15.1679C6.08766 15.0584 5.89465 15 5.69722 15H3C2.44772 15 2 14.5523 2 14Z"
+                stroke="currentColor" stroke-width="1.5" />
+              <path d="M16.5 7.5C16.5 7.5 18 9 18 11.5C18 14 16.5 15.5 16.5 15.5" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M19.5 4.5C19.5 4.5 22 7 22 11.5C22 16 19.5 18.5 19.5 18.5" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </div>
+          <div class="volume volumeMute">
+            <?xml version="1.0" ?><svg fill="none" height="30" stroke-width="1.5" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M17 14L19.0005 12M21 10L19.0005 12M19.0005 12L17 10M19.0005 12L21 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 14V10C3 9.44772 3.44772 9 4 9H6.69722C6.89465 9 7.08766 8.94156 7.25192 8.83205L11.4453 6.03647C12.1099 5.59343 13 6.06982 13 6.86852V17.1315C13 17.9302 12.1099 18.4066 11.4453 17.9635L7.25192 15.1679C7.08766 15.0584 6.89465 15 6.69722 15H4C3.44772 15 3 14.5523 3 14Z" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+        </div>
+        <div class="volume-slider">
+          <div class="volume-percentage"></div>
+        </div>
+      </div>
+      <div class="audio-title"></div>
+        <div class="timeline">
+          <div class="progress"></div>
+        </div>
+        <div class="audiotime">
+          <div class="current">0:00</div>/
+          <div class="length"></div>
+        </div>
+        <ul class="play-list"></ul>
+      </div>
+      <div class="weather">
+        <input type="text" class="city">
+        <i class="weather-icon owf"></i>
+        <div class="weather-error"></div>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div class="bottom-row">
+    <div class="settings__block">
+      <ul class="settings__block-left">
+        <li class="settings__item"><a class="settings__language">Language</a></li>
+        <li class="settings__item"><a class="settings__source">Source</a></li>
+        <li class="settings__item"><a class="settings__tag">Tag</a></li>
+        <li class="settings__item"><a class="settings__show">Show</a></li>
+      </ul>
+    <div class="settings__block-right">
+      <div class="language"><span>Choose language</span>
+        <div class="language__btn-box">
+          <div class="language__button"></div>
+        </div>
+      </div>
+      <ul class="source"><span>Select image API</span>
+        <li class="source__item">github</li>
+        <li class="source__item">unsplash</li>
+        <li class="source__item">flickr</li>
+      </ul>
+      <ul class="tag"><span>Choose tag</span>
+        <li class="tag__item">animal</li>
+        <li class="tag__item">architecture</li>
+        <li class="tag__item">art</li>
+        <li class="tag__item">athletics</li>
+        <li class="tag__item">fashion</li>
+        <li class="tag__item">film</li>
+        <li class="tag__item">nature</li>
+        <li class="tag__item">people</li>
+        <li class="tag__item">travel</li>
+      </ul>
+      <div class="showen">
+        <div class="show__btn-box show__btn-box--time" value="time">
+          <div class="show__button"></div>
+        </div>
+        <div class="show__btn-box show__btn-box--date" value="date">
+          <div class="show__button"></div>
+        </div>
+        <div class="show__btn-box show__btn-box--greet" value="greet">
+          <div class="show__button"></div>
+        </div>
+        <div class="show__btn-box show__btn-box--quote" value="quote">
+          <div class="show__button"></div>
+        </div>
+        <div class="show__btn-box show__btn-box--weather" value="weather">
+          <div class="show__button"></div>
+        </div>
+        <div class="show__btn-box show__btn-box--audio" value="audio">
+          <div class="show__button"></div>
+        </div>
+        <div class="show__btn-box show__btn-box--todo" value="todo">
+          <div class="show__button"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="settings__button">
+      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 311.094 311.094" style="enable-background:new 0 0 311.094 311.094;" xml:space="preserve">
+   <g>
+     <path style="fill:#fff;" d="M174.04,311.076h-39.05c-8.188,0-15.122-5.876-16.463-13.958l-4.588-28.18
+       c-2.082-0.759-4.147-1.588-6.176-2.453L85.07,283.761c-6.282,4.764-15.828,4.288-21.581-1.165L35.15,255.757
+       c-5.629-5.347-6.811-14.064-2.806-20.716l15.758-26.186c-1.853-3.882-3.512-7.888-4.941-11.964l-30.068-6.617
+       C5.364,188.562,0,181.857,0,173.969l0.018-39.05c0.018-8.223,5.911-15.14,13.993-16.446l30.651-4.994
+       c1.218-3.07,2.576-6.105,4.041-9.07l-16.852-27.58c-4.059-6.635-2.929-15.334,2.665-20.716L62.731,29.08
+       c5.664-5.505,15.158-6.105,21.545-1.306l25.657,19.269c1.2-0.476,2.4-0.935,3.635-1.376l4.976-31.692
+       c1.323-8.082,8.258-13.958,16.446-13.958h39.05c7.782,0,14.628,5.505,16.287,13.111l7.147,32.521
+       c1.112,0.406,2.206,0.794,3.3,1.235l27.474-18.652c6.335-4.27,15.299-3.564,20.84,1.694l28.357,26.839
+       c5.982,5.664,6.952,14.699,2.312,21.492l-17.54,25.816c1.553,3.106,2.965,6.282,4.235,9.511l30.668,5.011
+       c8.099,1.323,13.975,8.241,13.975,16.446l-0.018,39.05c0,7.782-5.523,14.628-13.111,16.269l-30.068,6.582
+       c-1.288,3.688-2.753,7.288-4.394,10.782l16.746,24.333c4.641,6.758,3.723,15.793-2.188,21.475l-28.18,27.033
+       c-5.523,5.311-14.469,6.07-20.84,1.818l-24.563-16.446c-2.523,1.129-5.117,2.188-7.799,3.159l-6.335,28.886
+       C188.668,305.571,181.822,311.076,174.04,311.076z M137.213,291.807h34.744l7.058-32.133c0.741-3.37,3.229-6.088,6.511-7.129
+       c5.347-1.676,10.464-3.706,15.369-6.211c3.123-1.588,6.864-1.359,9.74,0.582l27.386,18.334l25.075-24.051l-18.704-27.174
+       c-2.029-2.964-2.259-6.794-0.565-9.97c3-5.647,5.488-11.717,7.394-18.052c1.006-3.353,3.741-5.894,7.164-6.635l33.403-7.323
+       l0.018-34.744l-34.039-5.576c-3.512-0.582-6.423-3.053-7.57-6.423c-2.047-6.035-4.535-11.611-7.623-17.046
+       c-1.8-3.194-1.659-7.147,0.424-10.164l19.569-28.833l-25.233-23.892L209.543,64.23c-0.3,0.371-0.6,0.688-0.935,0.971
+       c-2.859,2.559-7.023,3.159-10.499,1.518c-3.9-1.835-7.994-3.247-12.14-4.553c-3.882-1.235-6.564-4.8-6.705-8.876l-7.323-34.003
+       h-34.727l-5.629,34.444l-0.371-0.071c-0.865,3.6-3.088,7.499-6.176,8.488c-4.288,1.376-8.488,2.841-12.493,4.764
+       c-3.564,1.676-7.746,1.076-10.64-1.57c-0.265-0.229-0.529-0.512-0.776-0.794L74.465,44.52L49.39,68.554l17.84,29.168
+       c0.212,0.282,0.441,0.565,0.618,0.865c2.012,3.017,2.17,6.899,0.406,10.058c-2.929,5.241-5.4,10.817-7.358,16.534
+       c-1.147,3.37-4.059,5.841-7.588,6.405l-34.021,5.558l-0.018,34.744l33.403,7.341c3.406,0.759,6.158,3.3,7.164,6.652
+       c1.941,6.547,4.553,12.864,7.746,18.775c1.623,3,1.535,6.635-0.229,9.546l-17.452,28.974l25.216,23.892l25.569-19.446
+       c2.912-2.223,6.882-2.594,10.146-0.953c4.676,2.329,9.529,4.235,14.575,5.823c3.459,1.094,6.017,4.041,6.617,7.623L137.213,291.807
+       z M156.553,214.184c-31.392,0-56.943-25.551-56.943-56.943c0-31.409,25.551-56.96,56.943-56.96c31.409,0,56.96,25.551,56.96,56.96
+       C213.531,188.633,187.98,214.184,156.553,214.184z M156.553,119.55c-20.769,0-37.674,16.905-37.674,37.691
+       c0,20.769,16.905,37.674,37.674,37.674c20.787,0,37.691-16.905,37.691-37.674C194.244,136.454,177.34,119.55,156.553,119.55z"/>
+   </g></svg>
+    </div>
+    <div class="quote__block">
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="todo"></div>
+    </div>
+    <div class="footer__copyright">
+    <a href="https://github.com/DonStacky"><svg id="Bold" enable-background="new 0 0 24 24" height="35" viewBox="0 0 24 24" width="35" xmlns="http://www.w3.org/2000/svg"><path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"/></svg><span>DonStacky</span><span>&copy;&nbsp;2023</span></a>
+    <a href="https://rs.school/js/"><img src="assets/svg/rs_school_js.svg" alt="footer__rss" height="35"></a>
+    </div>
+  </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
